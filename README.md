@@ -33,13 +33,6 @@
 
 ---
 
-## 📸 Screenshots
-
-| Home Page | Search Result |
-|-----------|---------------|
-| ![Home](assets/home.png) | ![Search](assets/search.png) |
-
-*(Add screenshots of your actual project UI in `assets` folder)*
 
 ---
 
