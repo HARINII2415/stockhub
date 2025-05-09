@@ -1,0 +1,120 @@
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow: 9px 9px 8px #a3a3a3,
+        -9px -9px 8px #ffffff;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow: 9px 9px 8px #a3a3a3,
+        -9px -9px 8px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+        
+    }
+}
+@media screen and (max-width: 450px) {
+    .sidenav {
+        font-size: 15px;
+    }
+}
+.sidenav>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    margin: 10px;
+    color: #818181;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.sidenav>div:hover,
+.activated {
+    background-color: #51C58E;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.activated {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    margin: 10px;
+    color: #818181;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+.content {
+    position: absolute;
+    left: 39%;
+    top: 25%;
+    height: 361px;
+    width: 200px;
+    background-color: #51C58E;
+    color: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 500px) {
+    .sidenav {
+        height: 60px;
+        width: 100%;
+        flex-direction: row;
+        position: absolute;
+        top: 80px;
+        padding-top: 0px;
+        overflow-y: hidden;
+    }
+
+    .logo img {
+        width: 50px;
+    }.content{
+        left: 21%;
+    }
+}

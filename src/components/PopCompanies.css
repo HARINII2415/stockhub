@@ -1,0 +1,65 @@
+.PopCompanies {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: calc(100% - 70px);
+    width: 160px;
+    position: fixed;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 0px;
+    background: #FFFFFF;
+    box-shadow: -5px 5px 10px #a6a6a6,
+        -5px 0px 10px #000;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.PopCompanies>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.PopCompanies>div:hover {
+    background-color: #51C58E;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.5);
+    border-radius: 3px;
+}
+
+@media (max-width: 500px) {
+    .PopCompanies {
+        position: absolute;
+        bottom: 0;
+        height: 70px;
+        flex-direction: row;
+        left: 0px;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        cursor: grab;
+    }
+
+    .PopCompanies>div {
+        margin-left: 20px;
+    }
+
+    .PopCompanies>div:first-child {
+        margin-left: 1000px;
+    }
+}
+
+@media (max-width: 430px) {
+    .PopCompanies>div:first-child {
+        margin-left: 1100px;
+    }
+}
